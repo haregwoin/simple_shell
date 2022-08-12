@@ -1,0 +1,53 @@
+.\" Manpage for Christian and Lina
+.\" Contact calypsobronte@calypsobronte.me or darkdrakkar@gmail.com in to correct errors or typos.
+.TH man 3 "28 Nov 2019" "1.0" "simple_shell man page"
+.SH NAME
+.B simple_shell
+.B dash
+-  UNIX command interpreter. (shell)
+.SH SYNOPSIS
+.B dash [command][-argument ...]
+
+.SH DESCRIPTION
+This shell is a custom version of the standard command interpreter for UNIX.
+reads lines from either a file or the terminal, interprets them, and generally executes other commands.
+
+
+
+.B Return value
+Returns 0 on success
+
+.SH EXAMPLES
+.B Compilation  -- : gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+
+.B command
+
+HolbiPro $ ls -la
+
+.B output:
+
+AUTHORS            README.md          _buffer.c          _decimal.c         _printf.c          _unsigned.c        free_shell.c       hsh                man_1_simple_shell shell.h
+LICENSE            _binary.c          _charandstring.c   _octal.c           _putchar.c         exe_fun.c          get_func.c         hsh.dSYM           prompt.c           strings.c
+
+
+.SH OPTIONS
+this shell has no other options than the ones the requested command have
+.SH SIMPLE COMMANDS
+If a simple command has been recognized, the shell performs the following actions:
+
+           1.   the first words of the form “Command -option” are separated and assigned to the environment.
+
+           2.   The remaining words are expanded as options of the command.
+
+           3.   The command is interpreted and executed.
+
+.SH SEE ALSO
+dash(1)
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+- Christian Suárez
+(darkdrakkar@gmail.com)
+
+- Lina María Montaño Ramírez
+(calypsobronte@calypsobronte.me)
